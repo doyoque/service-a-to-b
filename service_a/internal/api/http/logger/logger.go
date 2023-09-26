@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/doyoque/service-a/conf"
-	"github.com/doyoque/service-a/internal/api/http/middleware/auth"
+	"github.com/doyoque/service_a/conf"
+	"github.com/doyoque/service_a/internal/api/http/middleware/auth"
 	chimware "github.com/go-chi/chi/v5/middleware"
 	"github.com/sirupsen/logrus"
 )

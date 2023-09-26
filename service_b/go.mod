@@ -1,4 +1,4 @@
-module github.com/doyoque/service-a
+module github.com/doyoque/service_b
 
 go 1.21.1
 

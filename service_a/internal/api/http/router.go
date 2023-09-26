@@ -1,7 +1,7 @@
 package api
 
 import (
-	"github.com/doyoque/service-a/internal/api/http/logger"
+	"github.com/doyoque/service_a/internal/api/http/logger"
 	"github.com/go-chi/chi"
 	chimware "github.com/go-chi/chi/v5/middleware"
 	"github.com/go-chi/cors"

@@ -3,7 +3,7 @@ package auth
 import (
 	"context"
 
-	contextkeyenum "github.com/doyoque/service-a/internal/enum/contextkey"
+	contextkeyenum "github.com/doyoque/service_a/internal/enum/contextkey"
 )
 
 func GetUserAuthorizationContext(ctx context.Context) *UserAuthorization {
