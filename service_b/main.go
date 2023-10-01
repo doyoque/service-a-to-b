@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/doyoque/service_b/conf"
 	api "github.com/doyoque/service_b/internal/api/http"
 	"github.com/go-chi/chi"
 	"github.com/sirupsen/logrus"
@@ -11,14 +12,15 @@ import (
 )
 
 func main() {
+	conf.InitEnv()
 	fx.New(
 		api.Module,
 		fx.Invoke(func(apiRouter chi.Router) {
 			mainRouter := chi.NewRouter()
 			mainRouter.Mount("/", apiRouter)
 
-			logrus.Infof("listening port: %d\n", 8100)
-			http.ListenAndServe(fmt.Sprintf("%s:%d", "", 8100), mainRouter)
+			logrus.Infof("listening port: %d\n", conf.AppPort)
+			http.ListenAndServe(fmt.Sprintf("%s:%d", "", conf.AppPort), mainRouter)
 		}),
 	)
 }

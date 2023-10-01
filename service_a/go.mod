@@ -2,7 +2,7 @@ module github.com/doyoque/service_a
 
 go 1.21.1
 
-replace github.com/doyoque/service_util => /Users/doyoque/Documents/personal-work/projects/go-silly/service_util
+replace github.com/doyoque/service_util => ../service_util
 
 require (
 	github.com/doyoque/service_util v0.0.0-00010101000000-000000000000
