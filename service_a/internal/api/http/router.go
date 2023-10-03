@@ -1,8 +1,8 @@
 package api
 
 import (
-	"github.com/doyoque/service_a/internal/api/http/logger"
-	"github.com/go-chi/chi"
+	deposithttp "github.com/doyoque/service_a/internal/api/http/deposit"
+	"github.com/go-chi/chi/v5"
 	chimware "github.com/go-chi/chi/v5/middleware"
 	"github.com/go-chi/cors"
 	"go.uber.org/fx"
@@ -10,6 +10,7 @@ import (
 
 var Module = fx.Module("router",
 	fx.Provide(initRouter),
+	deposithttp.Module,
 )
 
 func initRouter() chi.Router {
@@ -25,7 +26,6 @@ func initRouter() chi.Router {
 	router.Use(
 		cors.Handler,
 		chimware.RequestID,
-		logger.HttpLogger,
 		chimware.Recoverer,
 		chimware.RealIP,
 	)

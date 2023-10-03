@@ -6,7 +6,7 @@ import (
 
 	"github.com/doyoque/service_a/conf"
 	api "github.com/doyoque/service_a/internal/api/http"
-	"github.com/go-chi/chi"
+	"github.com/go-chi/chi/v5"
 	"github.com/sirupsen/logrus"
 	"go.uber.org/fx"
 )

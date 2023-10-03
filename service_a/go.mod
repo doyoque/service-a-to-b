@@ -6,7 +6,6 @@ replace github.com/doyoque/service_util => ../service_util
 
 require (
 	github.com/doyoque/service_util v0.0.0-00010101000000-000000000000
-	github.com/go-chi/chi v1.5.5
 	github.com/go-chi/chi/v5 v5.0.10
 	github.com/go-chi/cors v1.2.1
 	github.com/joho/godotenv v1.5.1
@@ -15,9 +14,9 @@ require (
 )
 
 require (
-	go.uber.org/atomic v1.7.0 // indirect
+	go.uber.org/atomic v1.11.0 // indirect
 	go.uber.org/dig v1.17.0 // indirect
-	go.uber.org/multierr v1.6.0 // indirect
-	go.uber.org/zap v1.23.0 // indirect
-	golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 // indirect
+	go.uber.org/multierr v1.11.0 // indirect
+	go.uber.org/zap v1.26.0 // indirect
+	golang.org/x/sys v0.12.0 // indirect
 )
